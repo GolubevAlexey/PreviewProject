@@ -59,7 +59,7 @@ public class DBArchive extends SQLiteOpenHelper {
                     "archive_news",
                     null,
                     values);
-            Log.w("123","newRowId " + newRowId);
+            Log.w("123", "newRowId " + newRowId);
         }
     }
 

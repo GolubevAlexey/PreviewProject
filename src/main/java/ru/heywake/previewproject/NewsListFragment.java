@@ -109,14 +109,6 @@ public class NewsListFragment extends Fragment {
                     for(News el: listNews)
                     dbHelper.insertValue(el);
 
-                    //SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-                   // Cursor cursor = db.rawQuery("Select * From entry2", new String[]{});
-
-                   // while(cursor.moveToNext()) {
-                    //    Log.w("123", " cursor " + cursor.getString(0)+ cursor.getString(3));
-                   // }
-
                     if (isResumed()) {
                         ListView lv = (ListView) getView().findViewById(R.id.listView);
                         NewsArrayAdapter<News> adapter = new NewsArrayAdapter<News>(getContext(), R.layout.news_list_item, listNews);
@@ -130,7 +122,6 @@ public class NewsListFragment extends Fragment {
                         });
                     }
 
-                    //mListener.onNewsListFragmentListener(listNews.get(0));
 
                 } catch (JSONException e) {
                     messageLog("Sorry.\nLoad error\nJSON is wrong or URL is wrong or Internet is wrong");
