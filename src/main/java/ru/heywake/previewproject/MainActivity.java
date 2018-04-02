@@ -3,9 +3,11 @@ package ru.heywake.previewproject;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import java.util.ArrayList;
@@ -108,4 +110,5 @@ public class MainActivity extends Activity implements NewsListFragment.OnNewsLis
 
         }
     }
+
 }

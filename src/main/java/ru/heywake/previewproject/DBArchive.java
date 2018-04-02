@@ -53,13 +53,12 @@ public class DBArchive extends SQLiteOpenHelper {
             values.put(DBArchive.FeedEntry.COLUMN_NAME_DISCRIPTION, news.description);
             values.put(DBArchive.FeedEntry.COLUMN_NAME_URL, news.url);
 
-
             long newRowId;
             newRowId = db.insert(
                     "archive_news",
                     null,
                     values);
-            Log.w("123", "newRowId " + newRowId);
+
         }
     }
 
